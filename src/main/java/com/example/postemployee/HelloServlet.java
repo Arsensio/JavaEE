@@ -23,6 +23,8 @@ public class HelloServlet extends HttpServlet {
         PrintWriter writer =    response.getWriter();
         writer.write("Name = "+a +" & "+ " Possition = "+b);
 
+        System.out.println("name = "+a+" possition = "+b);
+
     }
 
     @Override
@@ -33,6 +35,9 @@ public class HelloServlet extends HttpServlet {
 
         PrintWriter writer =    resp.getWriter();
         writer.write("Name = "+a +" & "+ " Possition = "+b);
+
+
+        System.out.println("name = "+a+" possition = "+b);
     }
 
     public void destroy() {
